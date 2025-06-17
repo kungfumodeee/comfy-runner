@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Vector recreation of the cute cloud blob -->
+<svg width="768" height="768" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud body -->
+  <path d="
+    M160 500
+    C80 430 80 300 180 250
+    C260 130 420 90 520 140
+    C620 100 720 220 700 360
+    C760 460 680 620 500 660
+    C380 700 240 660 160 560
+    Z"
+    fill="#d6efff"
+    stroke="#0084ff"
+    stroke-width="8"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <!-- Top-left glossy highlight -->
+  <path d="
+    M270 170
+    C350 130 440 130 520 160
+    C520 160 480 200 420 190
+    C350 180 300 200 270 200
+    Z"
+    fill="#eaf6ff"
+    stroke="none"/>
+
+  <!-- Left cheek highlight -->
+  <ellipse cx="170" cy="430" rx="45" ry="65" fill="#eaf6ff"/>
+
+  <!-- Right cheek highlight -->
+  <ellipse cx="620" cy="430" rx="45" ry="65" fill="#eaf6ff"/>
+
+  <!-- Left eye -->
+  <ellipse cx="330" cy="300" rx="55" ry="90" fill="#007bff"/>
+  <!-- Left eye sparkle -->
+  <ellipse cx="350" cy="265" rx="25" ry="35" fill="#ffffff"/>
+
+  <!-- Right eye -->
+  <ellipse cx="480" cy="300" rx="55" ry="90" fill="#007bff"/>
+  <!-- Right eye sparkle -->
+  <ellipse cx="500" cy="265" rx="25" ry="35" fill="#ffffff"/>
+
+  <!-- Mouth (cat-like) -->
+  <path d="
+    M300 460
+    Q365 540 430 460
+    M430 460
+    Q495 540 560 460"
+    fill="none"
+    stroke="#007bff"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>

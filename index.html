@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="ui-overlay" id="gameUi" style="display: none;">
+            <div>Score: <span id="currentScore">0</span></div>
+            <div>Best: <span id="bestScore">0</span></div>
+        </div>
+        
+        <div class="instructions" id="instructions" style="display: none;">
+            Press SPACE to jump
+        </div>
+
+        <div class="menu" id="startMenu">
+            <h2>☁️ Comfy Runner</h2>
+            <div class="menu-buttons">
+                <button class="menu-btn" id="startPlayBtn">Play</button>
+                <button class="menu-btn shop-btn" id="startShopBtn">Shop</button>
+            </div>
+        </div>
+        
+        <div class="menu" id="gameOverMenu" style="display: none;">
+            <h2>Game Over!</h2>
+            <div class="score-display">
+                <div>Final Score: <span id="finalScore">0</span></div>
+                <div id="newRecord" style="display: none; color: #4CAF50; margin-top: 10px;">🎉 New Record!</div>
+            </div>
+            <div class="menu-buttons">
+                <button class="menu-btn play-again-btn" id="playAgainBtn">Play Again</button>
+                <button class="menu-btn shop-btn" id="gameOverShopBtn">Shop</button>
+            </div>
+        </div>
+
+        <div class="menu" id="shopMenu" style="display: none;">
+            <h2>🛍️ Shop</h2>
+            <div class="shop-points">Your points: <span id="shopPoints">0</span></div>
+            <div class="shop-items">
+            </div>
+            <div class="menu-buttons">
+                <button class="menu-btn" id="buyBtn">Buy</button>
+                <button class="menu-btn" id="exitShopBtn">Back</button>
+            </div>
+            <div id="shopMessage" class="shop-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
